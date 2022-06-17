@@ -1,0 +1,87 @@
+
+section.alarm  {
+    min-height: 100vh;
+    display: flex;
+}
+section.alarm .wrapper {
+    background: white;
+    min-width: 200px;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
+}
+section.alarm img {
+    max-width: 100px;
+}
+
+section.alarm h1 {
+    font-size: 35px;
+    color: red;
+}
+@media (max-width: 576px) {
+    section.alarm h1 {
+        font-size: 24px;
+    }
+}
+ section.alarm .select-time{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+ }
+  section.alarm .select-time.disable {
+
+    opacity: .3;
+    pointer-events: none;
+
+  }
+ section.alarm .columns {
+    width: calc(100% / 3 - 15px);
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid red;
+    min-width: 100px;
+
+ }
+ section.alarm select {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    color: red;
+ }
+
+ section.alarm button {
+    border: none;
+    outline: none;
+    background: #4a98f7;
+    padding: 25px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    width: 100%;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+@media (max-width: 576px) {
+    section.alarm button {
+        font-size: 24px;
+        padding: 15px;
+    }
+}
+ section.alarm button:hover {
+
+    background: #257be5;
+ }
+
